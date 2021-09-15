@@ -1,14 +1,14 @@
 // Import React and ReactDOM libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
+import faker from 'faker';
+import CommentDetail from './CommentDetail';
 
 // Create React Component
 const App = () => { // () => equals to function()
     return (
-        <div>
-            <label class = "label" for = "name">Enter Name: </label>
-            <input id = "name" type = "text"></input>
-            <button style = {{backgroundColor: 'blue', color: 'white'}}>Submit</button>
+        <div className = "ui container comments">
+            <CommentDetail />
         </div>
     );
 };
